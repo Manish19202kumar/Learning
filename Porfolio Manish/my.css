@@ -1,0 +1,52 @@
+/* *{
+    background-color: #fff;
+} */
+.nav{
+ background-color: #d68484;
+ height: 70px;
+ width: 100vw;
+}
+.nav ul {
+    /* right: 0; */
+    left: 20;
+}
+.nav ul {
+    position: absolute;
+    list-style: none;
+    margin: 20;
+    padding: 10;
+    left: 54%;
+    font-size: larger;
+    font-family: cursive;
+  }
+  .nav ul li {
+    display: inline;
+  }
+.nav ul li a {
+    /* display: inline-block; */
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333333;
+}
+.nav ul li a:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+.main{
+    height: 85vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+}
+.myself{
+    height: 70vh;
+    width: 40vw;
+    background-color: #fc8a8a;
+}
+.mypic{
+    height: 70vh;
+    width: 50vw;
+    left: 30%;
+    position: absolute;
+    background-color: #8af2fc;
+    top: 5;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>DOM Functions</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ margin: 20px;
+ text-align: center;
+ }
+ h1 {
+ color: #333;
+ }
+ p {
+ color: #666;
+ margin: 10px 0;
+ }
+ button {
+ padding: 10px 20px;
+ margin: 10px;
+ font-size: 16px;
+ cursor: pointer;
+ background-color: #4CAF50;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ }
+ button:hover {
+ background-color: #45a049;
+ }
+ </style>
+</head>
+<body>
+ <marquee behavior="" direction=""> <h1 id="mainHeading" style="color: orangered;">DOM Functions Demo</h1></marquee>
+ <p id="demoParagraph">This is a demonstration of various DOM functions.</p>
+ <button onclick="changeText()">Change Text</button>
+ <button onclick="addNewElement()">Add New Element</button>
+ <button onclick="removeElement()">Remove Element</button>
+ <button onclick="changeTextInfinitely()">Change Text Infinitely</button>
+ <script>
+ // Function to change the text content of an element
+ function changeText() {
+ var heading = document.getElementById("mainHeading");
+ heading.textContent = "New Heading Text";
+ }
+ // Function to add a new paragraph element
+ function addNewElement() {
+ var newParagraph = document.createElement("p");
+ newParagraph.textContent = "This is a new paragraph.";
+ document.body.appendChild(newParagraph);
+ }
+ // Function to remove the last paragraph element
+ function removeElement() {
+ var paragraphs = document.getElementsByTagName("p");
+ var lastParagraph = paragraphs[paragraphs.length - 1];
+ if (lastParagraph) {
+ lastParagraph.remove();
+ }
+ }
+ // Function to change the text content infinitely
+ var counter = 1;
+ function changeTextInfinitely() {
+ var heading = document.getElementById("mainHeading");
+ heading.textContent = "New Heading Text " + counter;
+ counter++;
+ }
+ </script>
+</body>
+</html>

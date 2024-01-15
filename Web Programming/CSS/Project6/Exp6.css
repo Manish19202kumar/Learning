@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .intro{
+    height: 90vh;
+    width: 100vw;
+} */
+/* .video { */
+    /* object-fit: cover; */
+    /* position: absolute; */
+ 
+    /* height: 100%;
+    width: 100vw;
+    position: absolute; */
+    /* z-index: 1; */
+  
+  .home {
+    height: 100vh;
+    position: relative;
+  }
+  video {
+    object-fit: cover;
+    /* position: absolute; */
+    /* margin: 0; */
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+  }
+  .home_heading{
+    display: block;
+    position: relative;
+    /* margin-top: 0px; */
+    margin-left: 80px;
+    margin-bottom: 120px;
+    z-index:2;
+    color: rgb(109, 94, 5);
+    height: 100px;
+    width: 100vw;
+  }
